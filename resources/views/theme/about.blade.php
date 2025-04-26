@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="{{ asset('assets/images/about-us.jpg') }}" alt="About Us Image" class="img-fluid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqJeMMJKQ0KzoJGDcVUbSP2PvBd8Ik85tiA&s"  alt="About Us Image" class="img-fluid">
             </div>
         </div>
 
@@ -32,21 +32,21 @@
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="team-member">
-                    <img src="{{ asset('assets/images/team-member-1.jpg') }}" alt="Team Member" class="img-fluid">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="Team Member" class="img-fluid">
                     <h4>John Doe</h4>
                     <p>CEO & Founder</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="team-member">
-                    <img src="{{ asset('assets/images/team-member-2.jpg') }}" alt="Team Member" class="img-fluid">
+                    <img src="https://us.123rf.com/450wm/dekazigzag/dekazigzag2108/dekazigzag210800026/172568501-close-up-photo-of-a-small-brunette-boy-looking-up-at-camera-while-playing-near-the-couch.jpg?ver=6 " >
                     <h4>Jane Smith</h4>
                     <p>Lead Developer</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="team-member">
-                    <img src="{{ asset('assets/images/team-member-3.jpg') }}" alt="Team Member" class="img-fluid">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.webp" alt="Team Member" class="img-fluid">
                     <h4>Robert Brown</h4>
                     <p>Project Manager</p>
                 </div>
