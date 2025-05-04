@@ -1,11 +1,11 @@
 <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="{{ route('home') }}" class="logo">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt=" App Dev">
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="App Dev">
                     </a>
                     <!-- ***** Logo End ***** -->
 
@@ -21,8 +21,9 @@
                             <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">About</a>
                         </li>
                         <li class="scroll-to-section">
-                            <a href="{{ route('pricing') }}" class="{{ request()->routeIs('pricing') ? 'active' : '' }}">Pricing</a>
-                        </li>
+    <a href="{{ route('features.index') }}" class="{{ request()->routeIs('features.index') ? 'active' : '' }}">Admin</a>
+</li>
+
 
                         <!-- Links visible only for authenticated users -->
                         @auth

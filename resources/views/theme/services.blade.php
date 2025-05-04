@@ -1,67 +1,97 @@
+
 @extends('layouts.app')
 
 @section('content')
-<!-- ***** Services Section Start ***** -->
-<section id="services" class="services section">
+<!-- ***** Features Section Start ***** -->
+<section id="features" class="features section">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">We offer a variety of services to help you succeed in the digital world.</p>
+                <h2 class="section-title">FEATURES</h2>
+                <p class="section-description">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
         </div>
-
-        <div class="row">
-            <!-- Service 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service-box">
-                    <i class="fa fa-cogs service-icon"></i>
-                    <h4>App Development</h4>
-                    <p>We build fully responsive and robust mobile and web applications tailored to your business needs.</p>
-                </div>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service-box">
-                    <i class="fa fa-paint-brush service-icon"></i>
-                    <h4>UI/UX Design</h4>
-                    <p>Our design team crafts seamless and intuitive user interfaces to ensure the best experience for your users.</p>
-                </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service-box">
-                    <i class="fa fa-cloud service-icon"></i>
-                    <h4>Cloud Solutions</h4>
-                    <p>We provide cloud-based solutions for scalable and flexible infrastructure, enabling your app to grow with ease.</p>
+        
+        <div class="row mt-5">
+        @foreach ($features as $feature)
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="feature-box p-3 border rounded h-100">
+                <div class="d-flex align-items-center">
+                    <img src="{{ asset('images/' . $feature->image) }}" alt="Feature Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px; margin-right: 15px;">
+                    <h5 class="mb-0">{{ $feature->title }}</h5>
                 </div>
             </div>
         </div>
+        @endforeach
+    </div>
+</div>
+    </div>
+</div>
     </div>
 </section>
-<!-- ***** Services Section End ***** -->
+<!-- ***** Features Section End ***** -->
 
-<!-- ***** About Us Section Start ***** -->
-<section id="about" class="about-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-description">Learn more about our mission and vision as we work to help businesses scale effortlessly.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="about-text">At Chain App Dev, we specialize in developing cutting-edge mobile and web applications. Our team consists of experienced designers and developers who work collaboratively to provide the best digital solutions to our clients. Whether you're looking to build a brand new app or improve an existing one, we have the expertise to make your project a success.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="{{ asset('assets/images/about-us.jpg') }}" alt="About Us Image" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ***** About Us Section End ***** -->
-
+<!-- Add your existing Services and About Us sections here -->
 @endsection
+
+<!-- Add this to your CSS file -->
+<style>
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #4CAF50;
+    margin: 15px auto 0;
+}
+
+.feature-box {
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.text-purple {
+    color: #9c27b0;
+}
+
+.text-warning {
+    color: #ffca2c;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+</style>
